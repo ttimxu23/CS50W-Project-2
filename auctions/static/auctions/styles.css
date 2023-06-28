@@ -1,0 +1,52 @@
+body {
+    padding: 10px;
+}
+
+.index_listing {
+    margin: 10px;
+    padding: 3px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 3px;
+}
+
+ul {
+    list-style: none;
+}
+
+.description {
+    width: 100%;
+}
+
+#bid_group {
+    margin-top: 12px;
+}
+
+.description {
+    margin-bottom: 10px;
+}
+
+.wish_button {
+    margin-top: 12px;
+}
+
+.comment_box {
+    margin-top: 12px;
+}
+
+.comment_form {
+    display: flex;
+    flex-direction: column;
+}
+
+.rem_button {
+    justify-self:center;
+}
+
+.comment_button {
+    margin-top: 6px;
+    width: 100px;
+}
+/* this doesn't do anything */
+
+
+

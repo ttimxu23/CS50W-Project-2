@@ -1,0 +1,17 @@
+{% extends "auctions/layout.html" %}
+
+{% block body %}
+    <h2>Active Listings</h2>
+    <ul>
+        {% for listing in listings %}
+        <div class="index_listing">
+            <li><a href="{% url 'listing' listing.id %}">{{listing}}</a></li>
+        <!--make this a little more advanced thru __str__-->
+        <!--also make it a hyperlink to the listings page-->
+        <!--make the listings page-->
+        </div>
+        {% empty %}
+            <li>No active listings</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

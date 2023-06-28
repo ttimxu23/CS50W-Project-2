@@ -1,0 +1,19 @@
+{% extends "auctions/layout.html" %}
+
+{% block body %}
+    <h2>Active Listings</h2>
+    <ul>
+        {% for listing in wishlist %}
+        <div class="index_listing">
+            <li><a href="{% url 'listing' listing.id %}">{{listing}}</a>
+                <form action="{% url 'wishlist_delete' listing.id %}" method="POST">
+                    {% csrf_token %}
+                    <input class="rem_button" type="submit" value="Remove">
+                    </form>
+            </li>
+        </div>
+        {% empty %}
+            <li>Wishlist empty</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
